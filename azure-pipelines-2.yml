@@ -6,3 +6,8 @@ trigger: none
 steps: 
 - script: echo Hello, world! 
   displayName: 'Run a one-line script'
+- task: NodeTool@0
+  inputs:
+    versionSource: 'spec'
+    versionSpec: '6.x'
+    checkLatest: true
