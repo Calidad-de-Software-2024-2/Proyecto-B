@@ -4,10 +4,10 @@
 # https://aka.ms/yaml
 
 trigger:
-- main
+- feature/flight-search
 
-pool:
-  vmImage: ubuntu-latest
+pool:  
+  name: Agent pool
 
 steps:
 - script: echo Hello, world!
